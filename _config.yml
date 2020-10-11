@@ -1,12 +1,13 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
+title:       Jill Robinson
+email:       test_email@example.com
+author:      Jill Robinson
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://jillrobinson.github.io"
 date_format: "%b %-d, %Y"
 header_pages:
+ - flashcard.md
  - about.md
  - contact.html
 
@@ -25,7 +26,7 @@ show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    false
 ajaxify_contact_form: false
-enable_mathjax: false
+enable_mathjax: true
 extended_fonts: false
 enable_anchorjs: false
 # Preview image for social media aka og:image and twitter:image
@@ -127,5 +128,4 @@ exclude:
   - Gemfile.lock
   - Rakefile
   - README.md
-  - screenshot.png
   - vendor

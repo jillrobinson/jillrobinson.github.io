@@ -40,10 +40,33 @@
     {% endif %}
 
     <!-- MathJax -->
-    {% if site.enable_mathjax %}
+    {% if page.mathjax %}
     <script type="text/javascript" async
-        src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
+    {% endif %}
+
+    <!-- Leaflet -->
+    {% if page.leaflet %}
+    <script src="https://rstudio.github.io/leaflet/libs/jquery/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://rstudio.github.io/leaflet/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://rstudio.github.io/leaflet/libs/bootstrap/shim/html5shiv.min.js"></script>
+    <script src="https://rstudio.github.io/leaflet/libs/bootstrap/shim/respond.min.js"></script>
+    <script src="https://rstudio.github.io/leaflet/libs/navigation/tabsets.js"></script>
+    <link href="https://rstudio.github.io/leaflet/libs/highlightjs/default.css" rel="stylesheet" />
+    <script src="https://rstudio.github.io/leaflet/libs/highlightjs/highlight.js"></script>
+    <script src="https://rstudio.github.io/leaflet/libs/htmlwidgets/htmlwidgets.js"></script>
+    <link href="https://rstudio.github.io/leaflet/libs/leaflet/leaflet.css" rel="stylesheet" />
+    <script src="https://rstudio.github.io/leaflet/libs/leaflet/leaflet.js"></script>
+    <link href="https://rstudio.github.io/leaflet/libs/leafletfix/leafletfix.css" rel="stylesheet" />
+    <link href="https://rstudio.github.io/leaflet/libs/leaflet-label/leaflet.label.css" rel="stylesheet" />
+    <script src="https://rstudio.github.io/leaflet/libs/leaflet-label/leaflet.label.js"></script>
+    <script src="https://rstudio.github.io/leaflet/libs/Proj4Leaflet/proj4-compressed.js"></script>
+    <script src="https://rstudio.github.io/leaflet/libs/Proj4Leaflet/proj4leaflet.js"></script>
+    <script src="https://rstudio.github.io/leaflet/libs/leaflet-binding/leaflet.js"></script>
+    <script src="https://rstudio.github.io/leaflet/libs/leaflet-providers/leaflet-providers_1.9.0.js"></script>
+    <script src="https://rstudio.github.io/leaflet/libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
     {% endif %}
 
     <!-- Verifications -->
